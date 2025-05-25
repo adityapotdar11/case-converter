@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Case Converter</title>
+        <script src="https://unpkg.com/feather-icons"></script>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Case Converter</h1>
+            <textarea
+                id="inputText"
+                class="textarea"
+                placeholder="Enter your text here..."
+                rows="8"
+                autofocus></textarea>
+
+            <div class="btn-group">
+                <button data-case="sentence" class="btn btn-convert">
+                    Sentence Case
+                </button>
+                <button data-case="lower" class="btn btn-convert">
+                    lower case
+                </button>
+                <button data-case="upper" class="btn btn-convert">
+                    UPPER CASE
+                </button>
+                <button data-case="capitalized" class="btn btn-convert">
+                    Capitalized Case
+                </button>
+                <button data-case="title" class="btn btn-convert">
+                    Title Case
+                </button>
+            </div>
+
+            <div class="btn-group">
+                <button id="copyBtn" class="btn btn-action">
+                    <i data-feather="clipboard"></i> Copy Text
+                </button>
+                <button id="clearBtn" class="btn btn-action">
+                    <i data-feather="trash-2"></i> Clear All
+                </button>
+            </div>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,107 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #2d2d2d;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.textarea {
+    background-color: #4a4a4a;
+    color: #ffffff;
+    border: 2px solid #666666;
+    border-radius: 8px;
+    padding: 15px;
+    width: 100%;
+    margin: 20px 0 10px;
+    resize: vertical;
+    font-size: 16px;
+}
+
+.textarea::placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+.textarea:focus {
+    border-color: #808080;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(128, 128, 128, 0.3);
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #666;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+.btn-convert {
+    background-color: #4a4a4a;
+    color: #fff;
+}
+
+.btn-convert:hover {
+    background-color: #5a5a5a;
+    border-color: #808080;
+}
+
+.btn-convert:focus {
+    box-shadow: 0 0 0 3px rgba(128, 128, 128, 0.3);
+    outline: none;
+}
+
+.btn-action {
+    background-color: #666;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.btn-action svg {
+    width: 16px;
+    height: 16px;
+}
+
+.btn-action:hover {
+    background-color: #767676;
+}
+
+h1 {
+    color: #fff;
+    margin: 0;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 991px) {
+    .container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
